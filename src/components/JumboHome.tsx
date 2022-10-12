@@ -23,7 +23,7 @@ const Styles = styled.div`
     z-index: 2;
     margin-bottom: 20px;
     margin-top: 200px;
-    height: 100vh;
+    height: 100vw;
     margin-top: -25px !important;
     font-size: 1.5em;
   
@@ -83,7 +83,7 @@ const Styles = styled.div`
   @media screen and (max-width: 768px) {
 
     .overlay {
-      height: 55vh !important;
+      height: 500px !important;
       font-size: 1em;
 
       h1 {
