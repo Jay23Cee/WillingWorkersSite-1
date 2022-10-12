@@ -11,7 +11,7 @@ const Styles = styled.div`
 
 .overlay{
   
-  height:50vh;
+  height:550px;
   background-size:cover;
     color:#ccc;
     background: url(${Contactimg})no-repeat ; 
@@ -64,7 +64,7 @@ const Styles = styled.div`
 
 @media screen and (max-width:768px) {
   .overlay{
-    height:35vh !important;
+    height:35vw !important;
     background-position:center;
     font-size:1.0em;
     h1{

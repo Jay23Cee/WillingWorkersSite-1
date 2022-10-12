@@ -23,7 +23,7 @@ const Styles = styled.div`
     z-index: 2;
     margin-bottom: 20px;
     margin-top: 200px;
-    height: 100vw;
+    height: 750px;
     margin-top: -25px !important;
     font-size: 1.5em;
   

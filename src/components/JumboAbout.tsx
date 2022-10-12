@@ -12,7 +12,7 @@ const Styles = styled.div`
 
 .overlay{
   
-  height:50vh;
+  height:550px;
   background-size:cover;
     color:#ccc;
     background: url(${Aboutimg})no-repeat top; 
@@ -64,7 +64,7 @@ const Styles = styled.div`
 
 @media screen and (max-width:768px) {
   .overlay{
-    height:35vh !important;
+    height:35vw !important;
     font-size:1.0em;
     h1{
       font-size:4em;
