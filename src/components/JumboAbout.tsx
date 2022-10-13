@@ -24,7 +24,7 @@ const Styles = styled.div`
     position:relative;
     z-index:-2;
     margin-bottom:20px;
-    margin-top: -25px !important;
+
     font-size:1.5em;
     text-align:center;
 
@@ -64,15 +64,60 @@ const Styles = styled.div`
 
 @media screen and (max-width:768px) {
   .overlay{
-    height:35vw !important;
+    height:350px !important;
     font-size:1.0em;
+  
     h1{
-      font-size:4em;
+      font-size:3em;
     }
-
- 
     
   }
+
+
+  .layer{
+
+    padding-top:20em;
+
+    h1 {
+      font-family: myFont;
+      color: var(--green);
+      font-size: 4.5rem;
+      line-height: 1em;
+      overflow: hidden;
+    }
+  
+    a {
+      border-radius: 20px 20px 0 20px;
+      background: transparent;
+      color: black;
+      border-color: black;
+      font-size: 0.2em;
+      font-weight: 600;
+      overflow: hidden;
+      z-index: 8;
+      background: yellow;
+      width: 160px;
+      height: 40px;
+      a:link {
+        text-decoration: none;
+      }
+  
+      a:visited{
+        text-decoration: none;
+      }
+  
+      a:hover{
+        text-decoration:none;
+      }
+  
+      a:active{
+        text-decoration: none;
+      }
+    }
+  }
+
+  
+  
 }
 
 `;

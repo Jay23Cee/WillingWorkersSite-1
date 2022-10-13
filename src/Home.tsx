@@ -11,7 +11,7 @@ import {Button} from "react-bootstrap"
 
 const Style = styled.div`
 .sop{
-  font-size: calc(10px + 6 * ((100vw - 320px) / 680)) !important;
+ 
 }
 .sop-info{
 height:auto;
@@ -28,7 +28,7 @@ height:auto;
 }
 .sop-statement-text{
   position:inherit;
-  font-size: calc(1.6em + 6 * ((100vw - 320px) / 680));
+
   width:80%;
   height:90%;
  
@@ -123,6 +123,10 @@ height:auto;
   background: #00e33f61;
   padding:20px;
   padding-right:40px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
 }
 .banner-two {
   display: flex;
@@ -151,7 +155,6 @@ height:auto;
 
   .sop-wrap{
   
-
     
     position:relative;
 
@@ -251,7 +254,7 @@ height:auto;
       flex-direction: column;
       width: 100vw;
       height: 200px;
-
+      text-shadow: 0 0 20px white;
       font-weight: 600;
       //font-size: 1.2em;
       text-align: center;
@@ -259,8 +262,11 @@ height:auto;
       align-item: center;
       color: white;
       h3 {
-        //font-size: 3em;
+       
         overflow:hidden;
+        z-index: 10;
+        color: black;
+        text-shadow: 1px -1px 20px #d5ffda;
       }
     }
     
@@ -285,7 +291,7 @@ height:auto;
       flex-direction: column;
       width: 100vw;
       height: 200px;
-  
+      text-shadow: 0 0 20px white;
       font-weight: 600;
       //font-size: 1.2em;
       text-align: center;
@@ -298,21 +304,7 @@ height:auto;
       }
     }
 
-.Programs{
 
-  //font-size:.90em;
-  h3{
-    //font-size:1.3em;
-    
-  }
-
-
-
-
-
-
-
-}
 
 
 

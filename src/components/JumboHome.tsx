@@ -10,6 +10,7 @@ const Styles = styled.div`
     src:url("./assets/fonts/Ramadhan_Mubarak.ttf");
   }
 
+
   .overlay {
     background-size: cover;
     color: #ccc;
@@ -24,7 +25,7 @@ const Styles = styled.div`
     margin-bottom: 20px;
     margin-top: 200px;
     height: 750px;
-    margin-top: -25px !important;
+  
     font-size: 1.5em;
   
     h1 {
@@ -33,8 +34,13 @@ const Styles = styled.div`
       font-size: 6.5rem;
       line-height: 1em;
       overflow: hidden;
+      z-index:10;
     }
   
+    p{
+      z-index:10;
+    }
+
     a {
       border-radius: 20px 20px 0 20px;
       background: transparent;
@@ -47,6 +53,7 @@ const Styles = styled.div`
       background: yellow;
       width: 160px;
       height: 40px;
+      z-index:10;
       a:link {
         text-decoration: none;
       }
@@ -66,7 +73,7 @@ const Styles = styled.div`
   }
   
   .layer {
-    background-color: #0005;
+    background-color:#000000bd;;
     opacity: 0.6;
     position: absolute;
   
