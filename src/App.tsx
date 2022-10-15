@@ -6,7 +6,7 @@ import {BrowserRouter,Routes, Route} from 'react-router-dom';
 // import { Link, Routes, useNavigate } from "react-router-dom";
 import Home from "./Home";
 import About from "./About";
-import Contact from "./Contact";
+// import Contact from "./Contact";
 import NoMatch from './NoMatch';
 import {Footer} from './Footer'
 import Layout from './components/Layout'
@@ -16,6 +16,7 @@ import JumboAbout from './components/JumboAbout';
 import JumboContact from './components/JumboContact';
 import Programs from './Programs';
 import styled from 'styled-components';
+import Contact from './Contact';
 
 
 const Styles = styled.div`
@@ -40,6 +41,7 @@ function App() {
     <Route  path="/" element={<JumboHome/>}/>
     <Route  path="/about" element={<JumboAbout/>}/>
     <Route  path="/contact" element={<JumboContact/>}/>
+
     </Routes>
   
     <Layout>
@@ -50,7 +52,8 @@ function App() {
 
         <Route  path="/about" element={ <About/>}/>
       
-        <Route  path="/contact" element={ <Contact/>}/>
+    
+    <Route  path="/contact" element={ <Contact/>}/>
         <Route  path="/programs" element={ <Programs/>}/>
         <Route path='*' element={<NoMatch/>}/>
  

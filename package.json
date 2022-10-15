@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@react-google-maps/api": "^2.13.1",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -11,8 +12,10 @@
     "@types/react": "^18.0.21",
     "@types/react-dom": "^18.0.6",
     "bootstrap": "^5.2.2",
+    "dotenv": "^16.0.3",
     "mdb-react-ui-kit": "^4.2.0",
     "react": "^18.2.0",
+    "react-animate-on-scroll": "^2.1.5",
     "react-bootstrap": "^2.5.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.4.2",
@@ -46,6 +49,9 @@
     ]
   },
   "devDependencies": {
+    "@types/google.maps": "^3.50.4",
+    "@types/googlemaps": "^3.43.3",
+    "@types/react-animate-on-scroll": "^2.1.5",
     "@types/styled-components": "^5.1.26"
   }
 }

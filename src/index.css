@@ -19,6 +19,9 @@ code {
 }
 
 
+.Gmap *{
+  overflow:visible !important;
+}
 
 
 
