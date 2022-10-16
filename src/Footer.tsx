@@ -37,7 +37,7 @@ export const Footer=()=> {
                 <MDBIcon icon="gem" className="me-3" />
                 Willing Workers
               </h6>
-              <h4>Logo Here</h4>
+            
             </MDBCol>
 
             
