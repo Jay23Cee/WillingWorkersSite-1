@@ -482,7 +482,7 @@ const Home = () => {
 
               <ScrollAnimation animateIn="fadeIn"  animateOnce={true}> 
               <div className="banner-two .hover-zoom">
-                <a href="/program">
+                <a href="/programs">
                   <div className="program-banner ">
                     <h3>Programs</h3>
 

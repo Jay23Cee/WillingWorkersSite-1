@@ -17,6 +17,7 @@ import JumboContact from './components/JumboContact';
 import Programs from './Programs';
 import styled from 'styled-components';
 import Contact from './Contact';
+import JumboPrograms from './components/JumboPrograms';
 
 
 const Styles = styled.div`
@@ -39,6 +40,7 @@ function App() {
     <NavigationBar/>
     <Routes>
     <Route  path="/" element={<JumboHome/>}/>
+    <Route  path="/programs" element={< JumboPrograms/>}/>
     <Route  path="/about" element={<JumboAbout/>}/>
     <Route  path="/contact" element={<JumboContact/>}/>
 
