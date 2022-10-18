@@ -47,7 +47,7 @@ const Styles = styled.div`
 }
 
 .layer{
-    background-color:#000;
+    background-color:#00000047;
     opacity:0.6;
     position:absolute;
 

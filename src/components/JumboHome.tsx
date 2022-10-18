@@ -73,7 +73,7 @@ const Styles = styled.div`
   }
   
   .layer {
-    background-color:#000000bd;;
+    background-color:#00000047;
     opacity: 0.6;
     position: absolute;
   
