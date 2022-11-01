@@ -112,6 +112,7 @@ height:auto;
   justify-content: center;
   align-item: center;
   color: white;
+  
 
 }
 
@@ -120,7 +121,10 @@ height:auto;
   background: #fff40059;
   padding:20px;
   padding-right:40px;
-
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
 }
 
@@ -268,6 +272,10 @@ height:auto;
       justify-content: center;
       align-item: center;
       color: white;
+      h3 {
+        //font-size: 3em;
+        overflow:hidden;
+      }
       h3 {
        
         overflow:hidden;
