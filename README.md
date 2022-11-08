@@ -1,5 +1,14 @@
-1`0/9/2022
+
+10/13/2022:
+We need to add a google maps api to the Contact section.
+add the contact information.
+needs to adjust the willing workers about page.
+Need to add the Program section.
+
+
+10/9/2022
 WOuld LIKE TO add some zoom animation to the donation section and image when hover.
+animatio to the program section.
 
 
 

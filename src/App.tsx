@@ -18,7 +18,7 @@ import Programs from './Programs';
 import styled from 'styled-components';
 import Contact from './Contact';
 import JumboPrograms from './components/JumboPrograms';
-
+import ScrollToTop from "./ScrollToTop";
 
 const Styles = styled.div`
 *{
@@ -37,6 +37,7 @@ function App() {
 
    <React.Fragment>
     <BrowserRouter>
+    <ScrollToTop children={undefined}/>
     <NavigationBar/>
     <Routes>
     <Route  path="/" element={<JumboHome/>}/>

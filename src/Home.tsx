@@ -9,6 +9,9 @@ import { ReactComponent as CoachIcon } from "./assets/coach.svg";
 import { ReactComponent as HandsIcon } from "./assets/hands.svg";
 import { Button } from "react-bootstrap";
 import ScrollAnimation from "react-animate-on-scroll";
+import { useNavigate } from "react-router-dom";
+
+
 
 
 
@@ -177,7 +180,11 @@ height:auto;
 
   @media screen and (max-width: 768px) {
 
-
+    .Programs-item{
+      width:90vw;
+        
+      
+    }
     html {
       font-size: calc(16px + 6 * ((100vw - 320px) / 680));
     }
@@ -330,7 +337,7 @@ height:auto;
 
 
   .Programs-item{
-    width:90vw;
+ 
     margin-top:50px;
 
     
@@ -466,6 +473,12 @@ active{ text-decoration: none; }
 
 `
 const Home = () => {
+  let navigate = useNavigate(); 
+  const routeProgramChange = () =>{ 
+    let path = `/programs`; 
+    navigate(path);
+  }
+
   return (
     <div>
       <Style>
@@ -518,7 +531,7 @@ const Home = () => {
                 We provide the best kind of transportation. Service provided
                 Monday - Friday{" "}
               </p>
-              <Button>Find out more</Button>
+              <Button   onClick={routeProgramChange}>Find out more</Button>
             </div>
             </ScrollAnimation>
 
@@ -532,7 +545,7 @@ const Home = () => {
                 allowing individuals to advocate for themselves and learn about
                 different lifestyles.
               </p>
-              <Button>Find out more</Button>
+              <Button   onClick={routeProgramChange}>Find out more</Button>
             </div>
             </ScrollAnimation>
 
@@ -540,13 +553,12 @@ const Home = () => {
   animateOut='bounceOutLeft'  animateOnce={true}> 
             <div className="Programs-item hands-info">
               <HandsIcon className="hands-icon" />
-              <h3>COMMUNITY INTEGRATION PROGRAM</h3>
+              <h3>SOCIAL RECREATION PROGRAM</h3>
               <p>
-                We provide Diversity, Equality, and Inclusion Resources,
-                allowing individuals to advocate for themselves and learn about
-                different lifestyles.
+              This structured adult developmental 
+              program is dedicated to enhancing the lives of adults with developmental disabilities.
               </p>
-              <Button>Find out more</Button>
+              <Button   onClick={routeProgramChange}>Find out more</Button>
             </div>
           </ScrollAnimation>
           </div>
