@@ -179,3 +179,22 @@
     }
   }
   
+
+  .about-continer-text-details- {
+    display: flex;
+    flex-direction: column;
+  
+    figure {
+      flex: 0 0 50%;
+      img{
+        width: 100%;
+        height:100%;
+      }
+    }
+  
+    p {
+      flex: 0 0 50%;
+    }
+  }
+  
+  

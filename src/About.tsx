@@ -33,6 +33,8 @@ function About() {
   At Willing Workers, we are passionate about helping individuals with disabilities live their best lives. For years, we have been providing top-notch support and services to our clients, and are committed to making a positive impact in their lives. Our team of skilled professionals is dedicated to helping our clients reach their full potential and lead fulfilling, meaningful lives.
 
   </p>
+  <div className="about-continer-text-details-">
+
   <figure>
     <img src={naturewalk}alt="A group of people participating in an outdoor activity"/>
     <figcaption>Our clients enjoying a nature walk</figcaption>
@@ -44,6 +46,7 @@ function About() {
     <img src={naturewalk} alt="A person painting at an art table"/>
     <figcaption>One of our clients participating in an arts and crafts activity</figcaption>
   </figure>
+
 
   <p>
   If you or a loved one is in need of support, don't hesitate to reach out to us. We would be happy to schedule a tour and discuss how Willing Workers can best serve you.
@@ -65,7 +68,7 @@ Los Angeles , Los Angeles 90016</h3>
 
     </div>
 
-
+  </div>
       </div>
   
   )
