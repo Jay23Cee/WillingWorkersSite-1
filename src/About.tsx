@@ -1,39 +1,7 @@
 import React from 'react'
 import { GoogleMap, InfoWindow, LoadScript, MarkerF } from '@react-google-maps/api';
 import styled from 'styled-components';
-
-
-const Style = styled.div`
-.About{
-  display:flex;
-  flex-direction:column;
-}
-
-
-
-.About-text{
- 
-  width:20vw;
-  h3{
-    font-size:.9em;
-  }
-}
-
-
-
-@media screen and (max-width:768px) {
-
-.About{
-  flex-direction:column;
-}
-
-
-.About-text{
-  width:60vw;
-}
-
-}
-`
+import naturewalk from './assets/nature_walk.jpg'
 
 
 
@@ -47,18 +15,43 @@ function About() {
 
   return (
 
-    <Style>
+
       
-<div className="About">
+<div className="about-container">
+
+<div className="about-container-banner mt-4 p-5 bg-primary text-white">
+     
+  <h1>About Us</h1>
+  <p>The best people in the service of helping individuals</p>
+  
+</div>
+
+        <div className="about-container-text">
+  <h1>"Dedicated to Making a Difference"</h1>
+
+  <p>
+  At Willing Workers, we are passionate about helping individuals with disabilities live their best lives. For years, we have been providing top-notch support and services to our clients, and are committed to making a positive impact in their lives. Our team of skilled professionals is dedicated to helping our clients reach their full potential and lead fulfilling, meaningful lives.
+
+  </p>
+  <figure>
+    <img src={naturewalk}alt="A group of people participating in an outdoor activity"/>
+    <figcaption>Our clients enjoying a nature walk</figcaption>
+  </figure>
+  <p>
+  In addition to offering a range of programs and activities tailored to the unique needs and interests of each individual, we also have our own private transportation service to ensure that our clients can easily access our services. Whether it's through our behavior program, arts and crafts, or outdoor activities like nature walks and trips to the movies, we strive to provide engaging and enriching experiences for our clients.
+  </p>
+  <figure>
+    <img src={naturewalk} alt="A person painting at an art table"/>
+    <figcaption>One of our clients participating in an arts and crafts activity</figcaption>
+  </figure>
+
+  <p>
+  If you or a loved one is in need of support, don't hesitate to reach out to us. We would be happy to schedule a tour and discuss how Willing Workers can best serve you.
+  </p>
+</div>
 
 
-        <div className="layer"></div>
-  <h1>About</h1>
-  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore nulla dolor laudantium eum dolorem deserunt tenetur quod in incidunt voluptatibus id, soluta aliquam exercitationem. Quasi voluptate minus, consectetur natus accusamus expedita perspiciatis nam. Tempore facere quidem provident eius magnam necessitatibus, libero repellendus unde similique officiis perspiciatis est sint quibusdam ipsam nam, fugit corporis fugiat? Fugit est unde omnis assumenda excepturi, dolore repellat, dignissimos quaerat ipsum autem vel quidem eveniet facilis sequi? Deleniti architecto earum consectetur ullam nesciunt veritatis eum quo eos quam repudiandae, est neque dolorum accusantium fugiat animi reprehenderit dolores voluptatem, aperiam voluptatibus! Vel aperiam harum officia, ut minima quod odit a quisquam voluptatibus dicta cupiditate quasi sapiente praesentium aut voluptates quidem ducimus numquam beatae, recusandae delectus optio porro ab error animi! Unde, cumque. Expedita tenetur in soluta sapiente, pariatur tempora ullam atque, fugiat recusandae labore, unde ratione? Rem eligendi omnis voluptatem tempore amet molestias harum maiores temporibus quos sed maxime nisi impedit asperiores mollitia labore, porro, animi nobis. Similique, laboriosam dignissimos. Modi, dolore. Animi, odio excepturi? Reprehenderit nemo molestias nisi esse minima illum eaque dicta suscipit odit inventore porro minus, dolorem nostrum laborum. Blanditiis tempore iste quo. Ex aperiam asperiores blanditiis nihil quaerat molestiae illo iste enim quas.</p>
-
-
-
-    <div className="About-text">
+    <div className="about-container-contacts">
       <h5>Schedule a tour today</h5>
       <h3 style={{'color':'gray;'}}>Willing Workers is currently giving tours following CDC guidelines. Masks are mandatory during your visit.</h3>
       <h3>  4813 W. Washington Blvd.<br></br>
@@ -74,7 +67,7 @@ Los Angeles , Los Angeles 90016</h3>
 
 
       </div>
-      </Style>
+  
   )
 }
 

@@ -3,33 +3,17 @@ import { MDBFooter, MDBContainer, MDBRow, MDBCol, MDBIcon } from 'mdb-react-ui-k
 import styled from 'styled-components';
 
 
-const Styles = styled.div`
 
-
-
-  section{
-    background-color: rgb(99,99,99);
-    color:white !important;
-
-    h4{
-        overflow:hidden;
-    }
-  }
-    
-  
-
-
-`;
 
 
 export const Footer=()=> {
   return (
-    <Styles>
+
 
     <MDBFooter bgColor='light' className='text-center text-lg-start text-muted'>
      
 
-      <section className=''>
+      <section className='footer'>
         <MDBContainer className='text-center text-md-start mt-5'>
           <MDBRow className='mt-3'>
             <MDBCol md="3" lg="4" xl="3" className='mx-auto mb-4'>
@@ -97,6 +81,6 @@ Los Angeles , Los Angeles 90016
 
      
     </MDBFooter>
-    </Styles>
+   
   );
 }

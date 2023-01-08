@@ -1,6 +1,6 @@
 import React from 'react';
 import logo from './logo.svg';
-import './App.css';
+import '../src/css/index.css'
 import Button from 'react-bootstrap/Button';
 import {BrowserRouter,Routes, Route} from 'react-router-dom';
 // import { Link, Routes, useNavigate } from "react-router-dom";
@@ -11,39 +11,28 @@ import NoMatch from './NoMatch';
 import {Footer} from './Footer'
 import Layout from './components/Layout'
 import {NavigationBar} from './components/NavigationBar'
-import JumboHome from './components/JumboHome';
-import JumboAbout from './components/JumboAbout';
-import JumboContact from './components/JumboContact';
+
+
 import Programs from './Programs';
 import styled from 'styled-components';
 import Contact from './Contact';
-import JumboPrograms from './components/JumboPrograms';
+
 import ScrollToTop from "./ScrollToTop";
-
-const Styles = styled.div`
-*{
-  h1,h2,h3,h4,,h6,p{
-    overflow:hidden;
-  }
-}
-
-
-`;
 
 
 function App() {
   return (
-    <Styles>
+  
 
    <React.Fragment>
     <BrowserRouter>
-    <ScrollToTop children={undefined}/>
+    {/* <ScrollToTop children={undefined}/> */}
     <NavigationBar/>
     <Routes>
-    <Route  path="/" element={<JumboHome/>}/>
-    <Route  path="/programs" element={< JumboPrograms/>}/>
+  
+    {/* <Route  path="/programs" element={< JumboPrograms/>}/>
     <Route  path="/about" element={<JumboAbout/>}/>
-    <Route  path="/contact" element={<JumboContact/>}/>
+    <Route  path="/contact" element={<JumboContact/>}/> */}
 
     </Routes>
   
@@ -62,11 +51,11 @@ function App() {
  
     </Routes>
     </Layout>
-   <Footer/>
+ 
     
     </BrowserRouter>
    </React.Fragment>
-    </Styles>
+ 
   );
 }
 
