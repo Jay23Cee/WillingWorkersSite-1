@@ -165,11 +165,13 @@ code {
   width: 80%;
   margin: 0 auto;
   text-align: center;
+  margin-top: 56px;
 }
 .about-container-text .about-container-text-details {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 20px;
 }
 .about-container-text .about-container-text-details figure {
   display: flex;
@@ -233,7 +235,7 @@ code {
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;
-    background: red;
+    background: rgba(220, 220, 220, 0.46);
     width: 100%;
   }
   .about-container-text .about-container-text-details .about-container-text-details-description {
