@@ -88,15 +88,30 @@ code {
 }
 
 .footer {
-  width: 100%;
+  width: 100vw;
   background-color: rgb(99, 99, 99);
-  color: white !important;
+  color: white;
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
+  word-wrap: break-word;
 }
 .footer h4 {
   overflow: hidden;
+}
+@media (max-width: 767px) {
+  .footer {
+    font-size: 0.8em;
+    flex-direction: column;
+  }
+}
+@media (min-width: 768px) {
+  .footer {
+    font-size: 1em;
+    flex-direction: row;
+  }
 }
 
 @font-face {
@@ -273,9 +288,17 @@ code {
   flex-direction: column;
   position: absolute;
   width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2%;
 }
 .contact-text {
-  width: 20vw;
+  width: 40vw;
+  text-align: center;
+  margin: 2px;
+}
+.contact-text h5 {
+  overflow: hidden;
 }
 .contact-text h3 {
   font-size: 0.9em;
@@ -283,22 +306,84 @@ code {
 .contact-banner {
   margin-top: 4rem;
   padding: 5rem;
-  background-color: #0000FF;
+  background-color: #0000ff;
   color: white;
-}
-.contact .Gmap {
-  width: 80vw;
-  overflow: hidden;
 }
 @media screen and (max-width: 768px) {
   .contact {
     flex-direction: column;
-  }
-  .contact .Gmap {
-    width: 100vw;
+    margin-top: 0;
   }
   .contact-text {
     width: 60vw;
+  }
+}
+
+.contact-container-banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: url("../assets/contact.jpg") no-repeat center;
+  background-size: cover !important;
+  width: 100%;
+  height: calc(70vh - 200px);
+  justify-content: center;
+}
+.contact-container-banner h1 {
+  font-family: myFont;
+  color: var(--green);
+  text-stroke: 2px white;
+  text-shadow: -3px 0 rgb(255, 255, 255), 0 3px white, 3px 0 white, 0 -3px white;
+  font-size: 6.5rem;
+  line-height: 1em;
+  overflow: hidden;
+  width: 100% !important;
+}
+
+.contact-container-information {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  padding: 20px;
+  /* Add these two media queries */
+}
+@media screen and (min-width: 768px) {
+  .contact-container-information {
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contact-container-information {
+    flex-direction: row;
+  }
+}
+.contact-container-information .Gmap {
+  /* Other styles for the map container */
+  overflow: hidden;
+}
+@media screen and (min-width: 1200px) {
+  .contact-container-information .Gmap {
+    width: 800px;
+    height: 600px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .contact-container-information .Gmap {
+    width: 600px;
+    height: 450px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .contact-container-information .Gmap {
+    width: 400px;
+    height: 300px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .contact-container-information .Gmap {
+    width: 80vw;
+    height: 45vh;
   }
 }
 

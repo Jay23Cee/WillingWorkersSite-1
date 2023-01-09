@@ -41,7 +41,7 @@ export const Footer=()=> {
 Los Angeles , Los Angeles 90016
               </p>
               <p>
-                <MDBIcon icon="envelope" className="me-3" />
+                <MDBIcon icon="envelope" className="me-4" />
                 info@willingworkers.com
               </p>
               
