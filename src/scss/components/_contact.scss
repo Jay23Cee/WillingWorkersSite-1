@@ -1,0 +1,39 @@
+.contact {
+    display: flex;
+    flex-direction:column;
+    position: absolute;
+    width:100%;
+
+    &-text {
+      width: 20vw;
+  
+      h3 {
+        font-size: 0.9em;
+      }
+    }
+  
+    &-banner {
+      margin-top: 4rem;
+      padding: 5rem;
+      background-color: #0000FF;
+      color: white;
+    }
+  
+    .Gmap {
+      width: 80vw;
+      overflow: hidden;
+    }
+  
+    @media screen and (max-width:768px) {
+      flex-direction: column;
+  
+      .Gmap {
+        width: 100vw;
+      }
+  
+      &-text {
+        width: 60vw;
+      }
+    }
+  }
+  

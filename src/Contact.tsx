@@ -41,26 +41,40 @@ const Style = styled.div`
 }
 `
 
-const containerStyle = {
-  width: '550px',
-  height: '400px',
+// const containerStyle = {
+//   width: '550px',
+//   height: '400px',
   
-};
+// };
 
-const center = {
-  lat: 34.03987169154813,
-  lng:  -118.34399681590634
-};
+// const center = {
+//   lat: 34.03987169154813,
+//   lng:  -118.34399681590634
+// };
 
 
 
-const onLoad = (marker: any) => {
-  console.log('marker: ', marker)
-}
+// const onLoad = (marker: any) => {
+//   console.log('marker: ', marker)
+// }
 
 function Contact() {
 
+  const containerStyle = {
+    width: '100%',
+    height: '400px'
+  };
 
+  const center = {
+    lat: -34.397,
+    lng: 150.644
+  };
+
+
+
+  const onLoad = marker => {
+    console.log('Marker has been loaded');
+  };
 
 
   var customLabel = {
@@ -74,45 +88,23 @@ function Contact() {
 
   return (
 
-    <Style>
+  
       
 <div className="contact">
-
-    <div className="Gmap" id='map'>
-
+<div className="contact-banner mt-4 p-5 bg-primary text-white">
    
-    <LoadScript
-      googleMapsApiKey='AIzaSyAIQ76AHNTX5-2ZwTZj7D4G1FLPEjez6oE'
-      >
-      <GoogleMap
-        mapContainerStyle={containerStyle}
-        center={center}
-        zoom={14}
-        >
-        { /* Child components, such as markers, info windows, etc. */ }
-        <MarkerF
-      onLoad={onLoad}
-      position={center}
-     label={customLabel}
-      onClick={()=>{
-        console.log("Infowindow should pop")
-        return( 
+  <h1>Contact Us</h1>
+  
+</div>
 
-         <InfoWindow>
-           
-        </InfoWindow>
-          )
-      }}
-    
 
-      >
- 
-
-      </MarkerF>
-        <></>
-      </GoogleMap>
-    </LoadScript>
-
+<div className="Gmap" id="map">
+      <LoadScript googleMapsApiKey="AIzaSyAIQ76AHNTX5-2ZwTZj7D4G1FLPEjez6oE">
+        <GoogleMap mapContainerStyle={containerStyle} center={center} zoom={14}>
+          {/* Child components, such as markers, info windows, etc. */}
+          <MarkerF onLoad={onLoad} position={center} label={customLabel} onClick={() => <InfoWindow />} />
+        </GoogleMap>
+      </LoadScript>
     </div>
 
     <div className="contact-text">
@@ -131,7 +123,7 @@ Los Angeles , Los Angeles 90016</h3>
 
 
       </div>
-      </Style>
+      
   )
 }
 
