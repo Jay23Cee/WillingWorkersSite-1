@@ -103,39 +103,39 @@ code {
   font-family: myfont;
   src: url("../assets/fonts/Ramadhan_Mubarak.ttf");
 }
-.about-container {
-  width: 100%;
+.contact {
   position: absolute;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
 }
 
-.about-container-banner {
-  width: 100%;
-  height: calc(70vh - 200px);
-  background-size: cover;
-  color: #ccc;
-  background: url("../assets/aboutus.jpg") no-repeat top;
-  background-size: cover;
+.about-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  z-index: -2;
-  margin-bottom: 20px;
-  font-size: 1.5em;
-  text-align: center;
+  position: absolute;
+  background-size: cover;
 }
-.about-container-banner h1 {
+.about-container .about-container-banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: url("../assets/about.jpg") no-repeat bottom;
+  background-size: cover;
+  width: 100%;
+  height: calc(70vh - 200px);
+  justify-content: center;
+}
+.about-container .about-container-banner h1 {
   font-family: myFont;
   color: var(--green);
+  text-stroke: 2px white;
+  text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
   font-size: 6.5rem;
   line-height: 1em;
   overflow: hidden;
+  width: 100% !important;
 }
-.about-container-banner button {
+.about-container .about-container-banner button {
   border-radius: 20px 20px 0 20px;
   background: transparent;
   color: yellow;
@@ -143,115 +143,163 @@ code {
   font-size: 0.9em;
 }
 
-.layer {
-  background-color: rgba(0, 0, 0, 0.2784313725);
-  opacity: 0.6;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  z-index: -1;
+.about-container-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
   text-align: center;
-  justify-content: center;
+}
+.about-container-text .about-container-text-details {
+  display: flex;
+  flex-direction: column;
   align-items: center;
 }
-
-@media screen and (max-width: 768px) {
-  .overlay {
-    height: 350px !important;
-    font-size: 1em;
-  }
-  .overlay h1 {
-    font-size: 3em;
-  }
-  .layer {
-    padding-top: 20em;
-  }
-  .layer h1 {
-    font-family: myFont;
-    color: var(--green);
-    font-size: 4.5rem;
-    line-height: 1em;
-    overflow: hidden;
-  }
-  .layer a {
-    border-radius: 20px 20px 0 20px;
-    background: transparent;
-    color: black;
-    border-color: black;
-    font-size: 0.2em;
-    font-weight: 600;
-    overflow: hidden;
-    z-index: 8;
-    background: yellow;
-    width: 160px;
-    height: 40px;
-  }
-  .layer a a:link {
-    text-decoration: none;
-  }
-  .layer a a:visited {
-    text-decoration: none;
-  }
-  .layer a a:hover {
-    text-decoration: none;
-  }
-  .layer a a:active {
-    text-decoration: none;
-  }
-}
-.About {
+.about-container-text .about-container-text-details figure {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+.about-container-text .about-container-text-details figure img {
+  width: 90%;
+  border-radius: 5px;
+}
+.about-container-text .about-container-text-details figure figcaption {
+  font-style: italic;
+  font-size: 0.8em;
+  text-align: center;
+  margin-top: 10px;
 }
 
-.about-container-text {
-  width: 60%;
-  align-self: center;
-  overflow: hidden;
-}
-
+/* Default styles for all screen sizes */
 .about-container-contacts {
-  overflow: hidden !important;
-  width: 60%;
-  align-self: center;
-}
-.about-container-contacts h3 {
-  font-size: 0.9em;
-}
-
-@media screen and (max-width: 768px) {
-  .About {
-    flex-direction: column;
-  }
+  font-size: 16px;
+  color: #000;
 }
 .about-container-contacts h5 {
-  font-size: 20px;
-  font-weight: bold;
+  color: #000;
+}
+.about-container-contacts h3 {
+  color: #808080;
+}
+
+/* Styles for screens with a width smaller than 768px (i.e. tablets and smartphones) */
+@media (max-width: 768px) {
+  .about-container-contacts {
+    font-size: 14px;
+  }
+}
+/* Styles for screens with a width smaller than 480px (i.e. smartphones) */
+@media (max-width: 480px) {
+  .about-container-contacts {
+    font-size: 12px;
+  }
+}
+@media (min-width: 768px) {
+  .about-container-text .about-container-text-details {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  .about-container-text .about-container-text-details figure {
+    width: 55%;
+  }
+  .about-container-text .about-container-text-details figure img {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media (min-width: 992px) {
+  .about-container-text .about-container-text-details {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    background: red;
+    width: 100%;
+  }
+  .about-container-text .about-container-text-details .about-container-text-details-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 40px;
+    width: 70%;
+    padding-bottom: 2vh;
+  }
+  .about-container-text .about-container-text-details figure {
+    width: 100%;
+  }
+  .about-container-text .about-container-text-details figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .about-container-text .about-container-text-details figure figcaption {
+    font-size: 1.5em;
+  }
+}
+/* Default styles for all screen sizes */
+.about-container-contacts {
+  color: #000;
+}
+.about-container-contacts h5 {
+  color: rgb(248, 195, 2);
   overflow: hidden;
 }
 .about-container-contacts h3 {
-  color: gray;
-  font-size: 18px;
-}
-.about-container-contacts h3:nth-of-type(3) {
-  white-space: pre-line;
+  color: #808080;
+  font-size: 16px;
 }
 
-.about-continer-text-details- {
+/* Styles for screens with a width smaller than 768px (i.e. tablets and smartphones) */
+@media (max-width: 768px) {
+  .about-container-contacts {
+    font-size: 14px;
+  }
+}
+/* Styles for screens with a width smaller than 480px (i.e. smartphones) */
+@media (max-width: 480px) {
+  .about-container-contacts {
+    font-size: 12px;
+  }
+}
+.contact {
   display: flex;
   flex-direction: column;
-}
-.about-continer-text-details- figure {
-  flex: 0 0 50%;
-}
-.about-continer-text-details- figure img {
+  position: absolute;
   width: 100%;
-  height: 100%;
 }
-.about-continer-text-details- p {
-  flex: 0 0 50%;
+.contact-text {
+  width: 20vw;
+}
+.contact-text h3 {
+  font-size: 0.9em;
+}
+.contact-banner {
+  margin-top: 4rem;
+  padding: 5rem;
+  background-color: #0000FF;
+  color: white;
+}
+.contact .Gmap {
+  width: 80vw;
+  overflow: hidden;
+}
+@media screen and (max-width: 768px) {
+  .contact {
+    flex-direction: column;
+  }
+  .contact .Gmap {
+    width: 100vw;
+  }
+  .contact-text {
+    width: 60vw;
+  }
 }
 
 @font-face {
@@ -727,7 +775,7 @@ code {
   background: url("../assets/programs.jpg") no-repeat top;
   background-size: cover;
   width: 100%;
-  height: calc(70vh - 200px);
+  height: 50%;
 }
 .program-container .overlay .layer {
   background-color: rgba(0, 0, 0, 0.5);

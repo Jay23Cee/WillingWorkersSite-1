@@ -29,10 +29,7 @@ function App() {
     {/* <ScrollToTop children={undefined}/> */}
     <NavigationBar/>
     <Routes>
-  
-    {/* <Route  path="/programs" element={< JumboPrograms/>}/>
-    <Route  path="/about" element={<JumboAbout/>}/>
-    <Route  path="/contact" element={<JumboContact/>}/> */}
+
 
     </Routes>
   

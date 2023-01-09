@@ -1,200 +1,203 @@
-@font-face{
-    font-family:myfont;
-    src:url("../assets/fonts/Ramadhan_Mubarak.ttf");
-  }
+@font-face {
+  font-family: myfont;
+  src: url("../assets/fonts/Ramadhan_Mubarak.ttf");
+}
+.contact{
+position:absolute
 
-.about-container{
-  width:100%;
-  position: absolute;
+}
+
+.about-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  text-align: center;
- 
-}
+  align-items: center;
+  position: absolute;
+  background-size: cover;
 
-.about-container-banner{
-  
- width: 100%;
- height: calc(70vh - 200px); 
-  background-size:cover;
-    color:#ccc;
-    background: url('../assets/aboutus.jpg')no-repeat top; 
-    background-size:cover;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
+  .about-container-banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: url("../assets/about.jpg") no-repeat bottom;
+    background-size: cover;
+    width: 100%;
+    height: calc(70vh - 200px);
+    justify-content: center;
     
-    z-index:-2;
-    margin-bottom:20px;
-
-    font-size:1.5em;
-    text-align:center;
-
-
-    h1{
-        font-family: myFont;
-        color: var(--green);
-        font-size: 6.5rem;
-        line-height: 1em;
-        overflow:hidden;
-    }
-
-    button{
-        border-radius: 20px 20px 0 20px ;
-        background:transparent;
-        color:yellow;
-        border-color:yellow;
-        font-size:.9em;
-    }
-}
-
-.layer{
-    background-color:#00000047;
-    opacity:0.6;
-    position:absolute;
-
-    top:0;
-    left:0;
-    bottom:0;
-    right:0;
-    z-index:-1;
-    text-align:center;
-    justify-content:center;
-    align-items:center;
-
-}
-
-@media screen and (max-width:768px) {
-  .overlay{
-    height:350px !important;
-    font-size:1.0em;
-  
-    h1{
-      font-size:3em;
-    }
-    
-  }
-
-
-  .layer{
-
-    padding-top:20em;
 
     h1 {
       font-family: myFont;
       color: var(--green);
-      font-size: 4.5rem;
+      text-stroke: 2px white;
+      text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
+      font-size: 6.5rem;
       line-height: 1em;
       overflow: hidden;
+      width:100% !important;
     }
-  
-    a {
+
+    button {
       border-radius: 20px 20px 0 20px;
       background: transparent;
-      color: black;
-      border-color: black;
-      font-size: 0.2em;
-      font-weight: 600;
-      overflow: hidden;
-      z-index: 8;
-      background: yellow;
-      width: 160px;
-      height: 40px;
-      a:link {
-        text-decoration: none;
+      color: yellow;
+      border-color: yellow;
+      font-size: 0.9em;
+    }
+  }
+}
+
+.about-container-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+
+  .about-container-text-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    figure {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0 auto;
+
+      img {
+        width: 90%;
+        border-radius: 5px;
       }
-  
-      a:visited{
-        text-decoration: none;
-      }
-  
-      a:hover{
-        text-decoration:none;
-      }
-  
-      a:active{
-        text-decoration: none;
+
+      figcaption {
+        font-style: italic;
+        font-size: 0.8em;
+        text-align: center;
+        margin-top: 10px;
       }
     }
   }
 
-  
-  
+
 }
 
 
-.About{
-    display:flex;
-    flex-direction:column;
-  }
-  
-  .about-container-text{
-    width:60%;
-    align-self: center;
-    overflow: hidden;
-  }
-  
-  .about-container-contacts{
-    overflow: hidden !important;
-    width:60%;
-    align-self: center;
-   // width:20vw;
-    h3{
-      font-size:.9em;
-      
-    }
-  }
-  
-  
-  
-  @media screen and (max-width:768px) {
-  
-  .About{
-    flex-direction:column;
-  }
-  
-  
- 
-  
+/* Default styles for all screen sizes */
+.about-container-contacts {
+  font-size: 16px;
+  color: #000; // Black
+
+  h5 {
+      color: #000; // Black
   }
 
+  h3 {
+      color: #808080; // Gray
+  }
+}
 
+/* Styles for screens with a width smaller than 768px (i.e. tablets and smartphones) */
+@media (max-width: 768px) {
   .about-container-contacts {
-    
-    h5 {
-      font-size: 20px;
-      font-weight: bold;
-      overflow: hidden;
-    }
-  
-    h3 {
-      color: gray;
-      font-size: 18px;
-    }
-  
-    h3:nth-of-type(3) {
-      white-space: pre-line; // preserves line breaks
-    }
+      font-size: 14px;
   }
-  
+}
 
-  .about-continer-text-details- {
-    display: flex;
-    flex-direction: column;
-  
-    figure {
-      flex: 0 0 50%;
-      img{
-        width: 100%;
-        height:100%;
+/* Styles for screens with a width smaller than 480px (i.e. smartphones) */
+@media (max-width: 480px) {
+  .about-container-contacts {
+      font-size: 12px;
+  }
+}
+
+
+
+@media (min-width: 768px) {
+  .about-container-text {
+    .about-container-text-details {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: flex-start;
+      justify-content: space-between;
+
+      figure {
+        width: 55%;
+
+        img {
+          width: 100%;
+          height:100%;
+        }
       }
     }
-  
-    p {
-      flex: 0 0 50%;
+  }
+}
+
+@media (min-width: 992px) {
+  .about-container-text {
+    .about-container-text-details {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: space-between;
+      background:red;
+      width:100%;
+      .about-container-text-details-description{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        margin:40px;
+        width:70%;
+        padding-bottom:2vh;
+      }
+      figure {
+        width: 100%;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+
+        figcaption {
+          font-size: 1.5em;
+        }
+      }
     }
   }
+}
+
+
+
+/* Default styles for all screen sizes */
+.about-container-contacts{
   
-  
+  color: #000; // Black
+
+  h5 {
+      color: rgb(248, 195, 2); // Black
+      overflow: hidden;
+  }
+
+  h3 {
+      color: #808080; // Gray
+      font-size: 16px;
+  }
+}
+
+/* Styles for screens with a width smaller than 768px (i.e. tablets and smartphones) */
+@media (max-width: 768px) {
+  .about-container-contacts {
+      font-size: 14px;
+  }
+}
+
+/* Styles for screens with a width smaller than 480px (i.e. smartphones) */
+@media (max-width: 480px) {
+  .about-container-contacts {
+      font-size: 12px;
+  }
+}
