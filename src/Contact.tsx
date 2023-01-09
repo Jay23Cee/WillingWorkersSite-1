@@ -42,6 +42,7 @@ const containerStyle = {
 };
 
 function Contact() {
+<<<<<<< HEAD
   const center = {
     lat: 34.03987169154813,
     lng: -118.34399681590634,
@@ -50,6 +51,26 @@ function Contact() {
   const onLoad = (marker: any) => {
     console.log("marker: ", marker);
   };
+=======
+
+
+  // const containerStyle = {
+  //   width: '550px',
+  //   height: '400px',
+  
+  // };
+  
+  const center = {
+    lat: 34.03987169154813,
+    lng:  -118.34399681590634
+  };
+
+
+  const onLoad = (marker: any) => {
+    console.log('marker: ', marker)
+  }
+
+>>>>>>> 45fae064a83ba6daebf36664ccb5d05b704efaf3
 
   var customLabel = {
     text: "A",
@@ -61,10 +82,73 @@ function Contact() {
   };
 
   return (
+<<<<<<< HEAD
     <div className="contact">
       <div className="contact-container-banner mt-4 p-5 bg-primary text-white">
         <h1>Contact Us</h1>
         <p></p>
+=======
+
+  
+      
+<div className="contact">
+<div className="contact-banner mt-4 p-5 bg-primary text-white">
+   
+  <h1>Contact Us</h1>
+  
+</div>
+
+
+<div className="Gmap" id="map">
+<LoadScript
+      googleMapsApiKey='AIzaSyAIQ76AHNTX5-2ZwTZj7D4G1FLPEjez6oE'
+      >
+      <GoogleMap
+      //  mapContainerStyle={containerStyle}
+        center={center}
+        zoom={14}
+        >
+        { /* Child components, such as markers, info windows, etc. */ }
+        <MarkerF
+      onLoad={onLoad}
+      position={center}
+     label={customLabel}
+      onClick={()=>{
+        console.log("Infowindow should pop")
+        return( 
+
+         <InfoWindow>
+
+        </InfoWindow>
+          )
+      }}
+
+
+      >
+
+
+      </MarkerF>
+        <></>
+      </GoogleMap>
+    </LoadScript>
+    </div>
+
+    <div className="contact-text">
+      <h5>Schedule a tour today</h5>
+      <h3 style={{'color':'gray;'}}>Willing Workers is currently giving tours following CDC guidelines. Masks are mandatory during your visit.</h3>
+      <h3>  4813 W. Washington Blvd.<br></br>
+Los Angeles , Los Angeles 90016</h3>
+<br></br>
+
+      <h3>Telephone: (323) 937-5950</h3>
+      <h3>Monday - Friday <br></br> 7am-3pm</h3>
+      <br></br>
+
+
+    </div>
+
+
+>>>>>>> 45fae064a83ba6daebf36664ccb5d05b704efaf3
       </div>
 
       <div className="contact-container-information">
