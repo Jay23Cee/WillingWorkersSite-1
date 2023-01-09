@@ -7,6 +7,7 @@ import {
 } from "@react-google-maps/api";
 import styled from "styled-components";
 import naturewalk from "./assets/nature_walk.jpg";
+import { Footer } from "./Footer";
 
 function About() {
   return (
@@ -76,6 +77,8 @@ function About() {
           <br></br>
         </div>
       </div>
+
+      <Footer/>
     </div>
   );
 }

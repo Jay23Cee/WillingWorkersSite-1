@@ -14,6 +14,7 @@ import lifeSkill from "../src/assets/programs/life_skill.jpg";
 //import recreationalActivities from '../src/assets/programs/recreational_activities.avif';
 //import recreational from '../src/assets/programs/recreational.jpg';
 import transportation from "../src/assets/programs/transportation.jpg";
+import { Footer } from "./Footer";
 
 const Programs = () => {
   const programs = [
@@ -82,6 +83,7 @@ const Programs = () => {
     </li>
   ))}
 </ul>
+      <Footer/>
       </div>
     </div>
   );
