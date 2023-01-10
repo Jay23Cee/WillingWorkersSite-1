@@ -53,7 +53,7 @@ const Programs = () => {
   return (
     <div>
       <div className="program-container">
-        <div className="overlay mt-4 p-5 bg-primary text-white">
+        <div className="program-container-banner mt-4 p-5 bg-primary text-white">
           <div className="layer"></div>
           <h1>Programs</h1>
           <br></br>
