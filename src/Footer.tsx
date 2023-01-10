@@ -1,12 +1,15 @@
 import React from 'react';
 import { MDBFooter, MDBContainer, MDBRow, MDBCol, MDBIcon } from 'mdb-react-ui-kit';
 import styled from 'styled-components';
+import { useNavigate } from 'react-router-dom';
 
 
 
 
 
 export const Footer=()=> {
+  const navigate = useNavigate()
+
   return (
 
 
@@ -37,8 +40,10 @@ export const Footer=()=> {
               
               <p>
                 <MDBIcon icon="home" className="me-2" />
-                4813 W. Washington Blvd.<br></br>
-Los Angeles , Los Angeles 90016
+                <a href={`https://www.google.com/maps/dir/?api=1&destination=${encodeURI('4813 W. Washington Blvd., Los Angeles, Los Angeles 90016')}`} target="_blank">
+  4813 W. Washington Blvd.<br></br>
+  Los Angeles , Los Angeles 90016
+</a>
               </p>
               <p>
                 <MDBIcon icon="envelope" className="me-4" />
@@ -52,17 +57,17 @@ Los Angeles , Los Angeles 90016
             <MDBCol md="3" lg="2" xl="2" className='mx-auto mb-4'>
               <h6 className='text-uppercase fw-bold mb-4'>Quick links</h6>
               <p>
-                <a href='/about' className='text-reset'>
+                <a  onClick={() => navigate("/about")} className='text-reset'>
                   About
                 </a>
               </p>
               <p>
-                <a href='/programs' className='text-reset'>
+                <a  onClick={() => navigate("/programs")} className='text-reset'>
                  Programs
                 </a>
               </p>
               <p>
-                <a href='/contact' className='text-reset'>
+                <a  onClick={() => navigate("/contact")} className='text-reset'>
                  Contacts
                 </a>
               </p>
@@ -73,7 +78,7 @@ Los Angeles , Los Angeles 90016
         </MDBContainer>
         <div className='text-center p-4' style={{ backgroundColor: 'rgba(0, 0, 0, 0.05)' }}>
         © 2021 Copyright:
-        <a className='text-reset fw-bold' href='https://mdbootstrap.com/'>
+        <a className='text-reset fw-bold'  onClick={() => navigate("/home")}>
             Willing Workers
         </a>
       </div>
