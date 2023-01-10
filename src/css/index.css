@@ -90,13 +90,19 @@ code {
 .footer {
   width: 100vw;
   background-color: rgb(99, 99, 99);
-  color: white;
+  color: white !important;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   word-wrap: break-word;
+}
+.footer a {
+  color: white;
+}
+.footer a :hover {
+  color: blue;
 }
 .footer h4 {
   overflow: hidden;
@@ -137,7 +143,7 @@ code {
   background: url("../assets/about.jpg") no-repeat bottom;
   background-size: cover;
   width: 100%;
-  height: calc(70vh - 200px);
+  height: calc(40vh - 200px);
   justify-content: center;
 }
 .about-container .about-container-banner h1 {
@@ -295,9 +301,10 @@ code {
   margin-top: 2%;
 }
 .contact-text {
-  width: 40vw;
   text-align: center;
   margin: 2px;
+  padding: 40px;
+  width: 40%;
 }
 .contact-text h5 {
   overflow: hidden;
@@ -329,7 +336,7 @@ code {
   background: url("../assets/contact.jpg") no-repeat center;
   background-size: cover !important;
   width: 100%;
-  height: calc(70vh - 200px);
+  height: calc(40vh - 200px);
   justify-content: center;
 }
 .contact-container-banner h1 {
@@ -363,6 +370,12 @@ code {
 .contact-container-information .Gmap {
   /* Other styles for the map container */
   overflow: hidden;
+}
+.contact-container-information .Gmap button {
+  background: red !important;
+}
+.contact-container-information .Gmap .LoadScript {
+  margin: top 200px, im !important;
 }
 @media screen and (min-width: 1200px) {
   .contact-container-information .Gmap {
@@ -855,16 +868,19 @@ code {
   padding: 10px;
   text-align: center;
 }
-.program-container .overlay {
+.program-container .program-container-banner {
   display: flex;
   flex-direction: column;
   align-items: center;
   background: url("../assets/programs.jpg") no-repeat top;
   background-size: cover;
   width: 100%;
-  height: 50%;
+  height: calc(40vh - 200px);
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 15px;
 }
-.program-container .overlay .layer {
+.program-container .program-container-banner .layer {
   background-color: rgba(0, 0, 0, 0.5);
   width: 100%;
   height: 100%;
@@ -872,12 +888,18 @@ code {
   top: 0;
   left: 0;
 }
-.program-container .overlay h1 {
-  font-size: 10.5em; /* reduce font size */
-  margin: 0; /* remove margin */
-  width: 100%;
+.program-container .program-container-banner h1 {
+  font-family: myFont;
+  color: var(--green);
+  text-stroke: 2px white;
+  text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
+  font-size: 6.5rem;
+  line-height: 1em;
+  overflow: hidden;
+  width: 100% !important;
+  z-index: 9;
 }
-.program-container .overlay p {
+.program-container .program-container-banner p {
   font-size: 1.5rem;
   line-height: 1.5;
   text-align: center;

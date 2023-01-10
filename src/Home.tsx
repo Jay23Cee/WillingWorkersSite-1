@@ -14,8 +14,8 @@ import w1 from './assets/welcome.jpg'
 
 const Home = () => {
   let navigate = useNavigate();
-  const routeProgramChange = () => {
-    let path = `/programs`;
+  const routeProgramChange = (path:any) => {
+   
     navigate(path);
   };
   // Declare a state variable to keep track of the current slide
@@ -95,7 +95,7 @@ const Home = () => {
               We provide private transportation services to our clients at our adult regional center. Our reliable drivers are available Monday-Friday to transport clients to and from the center and other locations. Our service is 
               designed to make getting around easy and stress-free for our clients.{" "}
               </p>
-              <Button onClick={routeProgramChange}>Find out more</Button>
+              <Button onClick={()=>{routeProgramChange('/programs')}}>Find out more</Button>
             </div>
           </ScrollAnimation>
 
@@ -111,7 +111,7 @@ const Home = () => {
               Our community integration program promotes diversity, equality, and inclusion and provides resources and support for clients to learn about different lifestyles and advocate for themselves. 
               The program helps clients lead independent lives within their communities.
               </p>
-              <Button onClick={routeProgramChange}>Find out more</Button>
+              <Button onClick={()=>{routeProgramChange('/programs')}}>Find out more</Button>
             </div>
           </ScrollAnimation>
 
@@ -127,7 +127,7 @@ const Home = () => {
               Our social recreation program enhances the lives of adults with developmental disabilities through recreational and social activities such as arts and crafts, music, and other creative pursuits. Our program provides a supportive environment for individuals to engage in activities that promote well-being.
               It helps individuals lead fulfilling and enriching lives
               </p>
-              <Button onClick={routeProgramChange}>Find out more</Button>
+              <Button onClick={()=>{routeProgramChange('/programs')}}>Find out more</Button>
             </div>
           </ScrollAnimation>
         </div>
@@ -163,7 +163,7 @@ const Home = () => {
 
         <div className="last-quote">
           {/* <img src={Smileimg} alt="" className="src" /> */}
-          <h4>Dedicated to making a difference in your community.</h4>
+          <h4>Dedicated to making a difference in our community.</h4>
         </div>
 
         <Footer/>
