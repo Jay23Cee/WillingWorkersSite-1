@@ -22,9 +22,9 @@ position:absolute
     background: url("../assets/about.jpg") no-repeat bottom;
     background-size: cover;
     width: 100%;
-    height: calc(40vh - 200px);
+   // height: calc(40vh - 200px);
     justify-content: center;
-    
+    overflow:visible !important;
 
     h1 {
       font-family: myFont;

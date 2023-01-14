@@ -143,8 +143,8 @@ code {
   background: url("../assets/about.jpg") no-repeat bottom;
   background-size: cover;
   width: 100%;
-  height: calc(40vh - 200px);
   justify-content: center;
+  overflow: visible !important;
 }
 .about-container .about-container-banner h1 {
   font-family: myFont;
