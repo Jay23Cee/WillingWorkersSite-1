@@ -336,7 +336,6 @@ code {
   background: url("../assets/contact.jpg") no-repeat center;
   background-size: cover !important;
   width: 100%;
-  height: calc(40vh - 200px);
   justify-content: center;
 }
 .contact-container-banner h1 {
@@ -875,7 +874,6 @@ code {
   background: url("../assets/programs.jpg") no-repeat top;
   background-size: cover;
   width: 100%;
-  height: calc(40vh - 200px);
   justify-content: center;
   text-align: center;
   margin-bottom: 15px;
