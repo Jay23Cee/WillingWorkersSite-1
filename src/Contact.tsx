@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
   GoogleMap,
   InfoWindow,
@@ -20,6 +20,12 @@ const options = {
 };
 
 function Contact() {
+  
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+
   const [selectedMarker, setSelectedMarker] = useState<{
     lat: number;
     lng: number;

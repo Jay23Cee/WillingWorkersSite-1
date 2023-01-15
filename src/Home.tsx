@@ -31,6 +31,7 @@ const Home = () => {
 
    // Update the current slide every 5 seconds
    useEffect(() => {
+   
     const interval = setInterval(() => {
       setCurrentSlide((currentSlide + 1) % images.length);
     }, 5000);

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import {
   GoogleMap,
   InfoWindow,
@@ -10,6 +10,10 @@ import naturewalk from "./assets/nature_walk.jpg";
 import { Footer } from "./Footer";
 
 function About() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  
   return (
     <div className="about-container">
       <div className="about-container-banner mt-4 p-5 bg-primary text-white">
