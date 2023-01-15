@@ -1,16 +1,17 @@
 import React from 'react';
-import logo from './logo.svg';
 import '../src/css/index.css'
 import Button from 'react-bootstrap/Button';
-import {BrowserRouter,Routes, Route} from 'react-router-dom';
+import {HashRouter as StaticRouter,Routes, Route} from 'react-router-dom';
 // import { Link, Routes, useNavigate } from "react-router-dom";
 import Home from "./Home";
 import About from "./About";
 // import Contact from "./Contact";
-import NoMatch from './NoMatch';
+
 import {Footer} from './Footer'
 import Layout from './components/Layout'
 import {NavigationBar} from './components/NavigationBar'
+import NoMatch from './NoMatch';
+
 
 
 import Programs from './Programs';
@@ -25,7 +26,7 @@ function App() {
   
 
    <React.Fragment>
-    <BrowserRouter>
+    <StaticRouter>
     {/* <ScrollToTop children={undefined}/> */}
     <NavigationBar/>
     <Routes>
@@ -50,7 +51,7 @@ function App() {
     </Layout>
  
     
-    </BrowserRouter>
+    </StaticRouter>
    </React.Fragment>
  
   );
