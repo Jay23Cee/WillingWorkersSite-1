@@ -48,13 +48,17 @@ const Home = () => {
           Empowering individuals with intellectual and developmental
            disabilities to reach their full potential
           </p>
-          <a href="/about">Learn More</a>
+          
+          <Button onClick={()=>{routeProgramChange("/about")}} >
+          Learn More About Us.
+          </Button>
         </div>
 
         <div className="banner">
           <ScrollAnimation animateIn="fadeIn" animateOnce={true}>
             <div className="banner-one .hover-zoom">
-              <a className="banner-button" href="/about">
+              <Button>
+              <a className="banner-button" onClick={()=>{routeProgramChange("/")}}>
                 <div className="donate-banner ">
                   <h3>Donate</h3>
                   <p>
@@ -63,12 +67,14 @@ const Home = () => {
                   </p>
                 </div>
               </a>
+              </Button>
             </div>
           </ScrollAnimation>
 
           <ScrollAnimation animateIn="fadeIn" animateOnce={true}>
             <div className="banner-two .hover-zoom">
-              <a href="/programs">
+              <Button>
+              <a onClick={()=>{routeProgramChange("/programs")}}>
                 <div className="program-banner ">
                   <h3>Programs</h3>
 
@@ -78,6 +84,8 @@ const Home = () => {
                   </p>
                 </div>
               </a>
+          </Button>
+
             </div>
           </ScrollAnimation>
         </div>

@@ -54,11 +54,11 @@
       background-color: #0201011c;
     }
 
-    a {
-      border-radius: 20px 20px 0 20px;
+    Button {
+      border-radius: 20px 20px 20px 20px;
       background: transparent;
-      color: black;
-      border-color: black;
+      color: black !important;
+      border-color: black !important;
       font-size: 0.9em;
       font-weight: 600;
       overflow: hidden;
@@ -66,20 +66,15 @@
       background: yellow;
       width: 160px;
       height: 40px;
-      z-index:10;
-      a:link {
-        text-decoration: none;
-      }
-  
-      a:visited{
-        text-decoration: none;
-      }
-  
-      a:hover{
+      z-index:10 !important;
+    
+     &:hover{
         text-decoration:none;
+        background-color: rgb(251, 201, 2);
+        cursor: pointer;
       }
   
-      a:active{
+      &:active{
         text-decoration: none;
       }
     }
@@ -220,12 +215,21 @@
       display:flex;
       flex-direction:row;
       position:absolute;
+        //font-size: 1.2em;
       left:0;
       margin-left:10%;
       margin-top:-200px;
       z-index:6;
       justify-content:center;
       align-items:center;
+      color:black;
+      button{
+        width:100%;
+        height: 100%;
+        background:rgba(0, 0, 0, 0.39);
+
+      
+      }
     }
     
     .coach-info{
@@ -237,21 +241,26 @@
       flex-direction: column;
       width:40vw;
       height: 250px;
-      background: url('../assets/donate1.jpg') no-repeat center center;
+      background: url('../assets/donate.jpg') no-repeat center top;
       background-size: cover;
       font-weight: 600;
-      //font-size: 1.2em;
+    
       text-align: center;
       justify-content: center;
       // align-item: center;
       color: white;
-  
+     button{
+
+      &:hover{
+        background: rgba(255, 196, 0, 0.327);
+      }
+     }
      
     }
     
     .donate-banner{
       height:100%;
-      background: #fff40059;
+      // background: #a1a1a159;
       padding:20px;
       padding-right:40px;
       display: flex;
@@ -264,7 +273,7 @@
     .program-banner{
       height:100%;
     
-      background: #00e33f61;
+    //  background: #00e33f61;
       padding:20px;
       padding-right:40px;
       display:flex;
@@ -285,6 +294,11 @@
       justify-content: center;
       // align-item: center;
       color: white;
+      button{
+        &:hover{
+          background: rgba(3, 247, 27, 0.29);
+        }
+       }
     
     }
     
@@ -408,7 +422,7 @@
         
         .donate-banner{
           height:100%;
-          background: #fff40059;
+        // background: #fff40059;
           padding:20px;
           padding-right:40px;
         
