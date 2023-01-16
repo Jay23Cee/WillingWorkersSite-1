@@ -51,7 +51,7 @@ const Home = () => {
           </p>
           
           <Button onClick={()=>{routeProgramChange("/about")}} >
-          Learn More About Us.
+          Learn More
           </Button>
         </div>
 
