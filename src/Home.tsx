@@ -56,23 +56,8 @@ const Home = () => {
         </div>
 
         <div className="banner">
-          <ScrollAnimation animateIn="fadeIn" animateOnce={true}>
-            <div className="banner-one .hover-zoom">
-              <Button>
-              <a className="banner-button" onClick={()=>{routeProgramChange("/")}}>
-                <div className="donate-banner ">
-                  <h3>Donate</h3>
-                  <p>
-                  Your donation can make a difference in the lives of those we serve. 
-                  Every contribution helps us provide valuable services. 
-                  </p>
-                </div>
-              </a>
-              </Button>
-            </div>
-          </ScrollAnimation>
-
-          <ScrollAnimation animateIn="fadeIn" animateOnce={true}>
+          
+        <ScrollAnimation animateIn="fadeIn" animateOnce={true}>
             <div className="banner-two .hover-zoom">
               <Button>
               <a onClick={()=>{routeProgramChange("/programs")}}>
@@ -89,6 +74,22 @@ const Home = () => {
 
             </div>
           </ScrollAnimation>
+          <ScrollAnimation animateIn="fadeIn" animateOnce={true}>
+            <div className="banner-one .hover-zoom">
+              <Button>
+              <a className="banner-button" onClick={()=>{routeProgramChange("/")}}>
+                <div className="donate-banner ">
+                  <h3>Donate</h3>
+                  <p>
+                  Your donation can make a difference in the lives of those we serve. 
+                  Every contribution helps us provide valuable services. 
+                  </p>
+                </div>
+              </a>
+              </Button>
+            </div>
+          </ScrollAnimation>
+
         </div>
 
         <div className="programs">
