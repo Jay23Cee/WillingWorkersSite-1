@@ -9,6 +9,8 @@ import {
 import styled from "styled-components";
 import { Footer } from "./Footer";
 
+
+
 const containerStyle = {
   width: "100%",
   height: "100%",
@@ -20,7 +22,12 @@ const options = {
 };
 
 function Contact() {
-  
+
+  const apiKey = process.env.REACT_APP_GOOGLE_MAPS_API_KEY as string;
+
+
+  console.log(apiKey, " THIS IS THE API KEY")
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -70,7 +77,7 @@ function Contact() {
 
       <div className="contact-container-information">
         <div className="Gmap" id="map">
-          <LoadScript googleMapsApiKey="AIzaSyAIQ76AHNTX5-2ZwTZj7D4G1FLPEjez6oE">
+          <LoadScript googleMapsApiKey={apiKey}>
             <GoogleMap
               mapContainerStyle={containerStyle}
               center={center}
