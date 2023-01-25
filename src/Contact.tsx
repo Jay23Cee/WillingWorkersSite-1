@@ -26,7 +26,7 @@ function Contact() {
   const apiKey = process.env.REACT_APP_GOOGLE_MAPS_API_KEY as string;
 
 
-  console.log(apiKey, " THIS IS THE API KEY")
+
 
   useEffect(() => {
     window.scrollTo(0, 0);
