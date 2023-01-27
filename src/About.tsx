@@ -58,11 +58,11 @@ become full participants in their communities.
             </p>
 
             <ul>
-  <li>Compassion: We care deeply about the thoughts and feelings of those around us.</li>
-  <li>Dignity: We treat all individuals with respect, honor, and fairness.</li>
-  <li>Diversity: We celebrate and embrace the differences that make us stronger.</li>
-  <li>Excellence: We strive to deliver the highest quality support and services at all times.</li>
-  <li>Honesty: We prioritize honesty and transparency in our communication in order to build trust.</li>
+  <li><b>Compassion:</b> We care deeply about the thoughts and feelings of those around us.</li>
+  <li><b>Dignity:</b> We treat all individuals with respect, honor, and fairness.</li>
+  <li><b>Diversity:</b> We celebrate and embrace the differences that make us stronger.</li>
+  <li><b>Excellence:</b> We strive to deliver the highest quality support and services at all times.</li>
+  <li><b>Honesty:</b> We prioritize honesty and transparency in our communication in order to build trust.</li>
 </ul>
             {/* </div> */}
           
