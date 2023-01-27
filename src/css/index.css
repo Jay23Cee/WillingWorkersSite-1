@@ -189,7 +189,7 @@ code {
   margin: 0 auto;
 }
 .about-container-text .about-container-text-details figure img {
-  width: 90%;
+  max-width: 60%;
   border-radius: 5px;
 }
 .about-container-text .about-container-text-details figure figcaption {
@@ -237,13 +237,6 @@ code {
     justify-content: space-between;
     padding: 0 50px;
   }
-  .about-container-text figure {
-    width: 55%;
-  }
-  .about-container-text figure img {
-    max-width: 60%;
-    height: 100%;
-  }
 }
 @media (min-width: 992px) {
   .about-container-text .about-container-text-details {
@@ -263,7 +256,7 @@ code {
     padding-bottom: 2vh;
   }
   .about-container-text .about-container-text-details figure {
-    width: 100%;
+    max-width: 80%;
   }
   .about-container-text .about-container-text-details figure img {
     width: 100%;

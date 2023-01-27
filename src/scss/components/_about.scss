@@ -75,9 +75,9 @@ position:absolute
       flex-direction: column;
       align-items: center;
       margin: 0 auto;
-
+     
       img {
-        width: 90%;
+        max-width: 60%;
         border-radius: 5px;
       }
 
@@ -150,12 +150,12 @@ position:absolute
 
     }
     figure {
-      width: 55%;
+    //  width: 55%;
 
-      img {
-        max-width: 60%;
-        height:100%;
-      }
+      // img {
+      //   max-width: 60%;
+      //   height:100%;
+      // }
     }
   }
 }
@@ -181,7 +181,7 @@ position:absolute
         padding-bottom:2vh;
       }
       figure {
-        width: 100%;
+        max-width: 80%;
 
         img {
           width: 100%;

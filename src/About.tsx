@@ -52,25 +52,39 @@ become full participants in their communities.
               
             <h1>Our Values</h1>
             <p>
-            As employees of Willing Workers, we are committed to the 
-            following values in our interactions with the individuals we serve, 
-            their families, our staff, the community, and each other:
+            Our values are at the core of who we are as employees of Willing Workers. They guide our interactions with the individuals we serve, their families, our staff, the community, and each other. We strive to embody these values in everything we do and make them a fundamental part of our organizational culture.
             </p>
 
-            <ul>
-  <li><b>Compassion:</b> We care deeply about the thoughts and feelings of those around us.</li>
-  <li><b>Dignity:</b> We treat all individuals with respect, honor, and fairness.</li>
-  <li><b>Diversity:</b> We celebrate and embrace the differences that make us stronger.</li>
-  <li><b>Excellence:</b> We strive to deliver the highest quality support and services at all times.</li>
-  <li><b>Honesty:</b> We prioritize honesty and transparency in our communication in order to build trust.</li>
-</ul>
+    <p>
+
+    By adhering to an individual-centered approach, we put the needs and well-being of the individuals we serve at the forefront of all our actions and decisions. We empower individuals to take an active role in their own growth and development, and strive to create an inclusive environment where everyone feels valued and respected. We work closely with families, staff, and the community to provide the best possible support and services. We are committed to continuously seeking out new and innovative ways to improve our services and support while taking responsibility for our actions and decisions, and being transparent in our communication and reporting.
+    </p>
+
+
+    <p>
+    Through our values of compassion, dignity, diversity, excellence, and honesty, we care deeply about the thoughts and feelings of those around us, treat all individuals with respect, honor, and fairness, celebrate and embrace the differences that make us stronger, strive to deliver the highest quality support and services at all times, and prioritize honesty and transparency in our communication in order to build trust. Together, these values form the foundation of our mission to support and empower the individuals we serve.
+    </p>
+
+            {/* <ul>
+  <li><strong>Individual-centered approach:</strong> We put the individuals we serve at the forefront of all our actions and decisions, designing our support and services around their unique needs, preferences, and goals.</li>
+  <li><strong>Empowerment:</strong> We believe in empowering individuals to take an active role in their own growth and development.</li>
+  <li><strong>Inclusivity:</strong> We strive to create an inclusive environment where all individuals feel valued and respected.</li>
+  <li><strong>Collaboration:</strong> We work closely with families, staff, and the community to provide the best possible support and services.</li>
+  <li><strong>Innovation:</strong> We are committed to continuously seeking out new and innovative ways to improve our services and support.</li>
+  <li><strong>Accountability:</strong> We take responsibility for our actions and decisions, and strive to be transparent in our communication and reporting.</li>
+  <li><strong>Compassion:</strong> We care deeply about the thoughts and feelings of those around us.</li>
+  <li><strong>Dignity:</strong> We treat all individuals with respect, honor, and fairness.</li>
+  <li><strong>Diversity:</strong> We celebrate and embrace the differences that make us stronger.</li>
+  <li><strong>Excellence:</strong> We strive to deliver the highest quality support and services at all times.</li>
+  <li><strong>Honesty:</strong> We prioritize honesty and transparency in our communication in order to build trust.</li>
+</ul> */}
             {/* </div> */}
           
    
 </div>
 
-<div className="guiding_principles">
-           <h1>
+ <div className="guiding_principles">
+           {/* <h1>
             Guiding Principles:
             </h1> 
             <p>
@@ -81,14 +95,14 @@ Inclusivity: We strive to create an inclusive environment where all individuals 
 Collaboration: We work closely with families, staff, and the community to provide the best possible support and services.
 Innovation: We are committed to continuously seeking out new and innovative ways to improve our services and support.
 Accountability: We take responsibility for our actions and decisions, and strive to be transparent in our communication and reporting.
-            </p>
+            </p> */}
             <figure>
             <img
               src={helpingHands}
               alt="A group of people participating in an outdoor activity"
             />
           </figure>
-            </div>
+            </div> 
             
           </div>
 
