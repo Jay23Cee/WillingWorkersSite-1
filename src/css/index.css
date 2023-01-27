@@ -189,7 +189,7 @@ code {
   margin: 0 auto;
 }
 .about-container-text .about-container-text-details figure img {
-  max-width: 60%;
+  max-width: 80%;
   border-radius: 5px;
 }
 .about-container-text .about-container-text-details figure figcaption {
@@ -236,6 +236,9 @@ code {
     flex-direction: column-reverse;
     justify-content: space-between;
     padding: 0 50px;
+  }
+  .about-container-text figure {
+    width: 55%;
   }
 }
 @media (min-width: 992px) {

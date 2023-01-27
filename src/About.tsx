@@ -44,7 +44,7 @@ become full participants in their communities.
 </p>
 <figure>
     <img
-      src={naturewalk}
+      src={helpingHands}
       alt="A group of people participating in an outdoor activity"
     />
   </figure>
@@ -98,7 +98,7 @@ Accountability: We take responsibility for our actions and decisions, and strive
             </p> */}
             <figure>
             <img
-              src={helpingHands}
+              src={naturewalk}
               alt="A group of people participating in an outdoor activity"
             />
           </figure>
