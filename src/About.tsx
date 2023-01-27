@@ -7,6 +7,7 @@ import {
 } from "@react-google-maps/api";
 import styled from "styled-components";
 import naturewalk from "./assets/nature_walk.jpg";
+import helpingHands from "./assets/hands.jpg";
 import { Footer } from "./Footer";
 
 function About() {
@@ -22,45 +23,80 @@ function About() {
       </div>
 
       <div className="about-container-text">
-        <h1>"Dedicated to Making a Difference"</h1>
 
-        <p>
-          At Willing Workers, we are passionate about helping individuals with
-          disabilities live their best lives. For years, we have been providing
-          top-notch support and services to our clients, and are committed to
-          making a positive impact in their lives. Our team of skilled
-          professionals is dedicated to helping our clients reach their full
-          potential and lead fulfilling, meaningful lives.
-        </p>
 
         <div className="about-container-text-details">
+
           <div className="about-container-text-details-description">
+          <h1>"Our Mission"</h1>
+
+<p>
+At Willing Workers, we are a organization dedicated to assisting and supporting 
+individuals with intellectual and developmental disabilities. Our mission is to 
+promote independence, self-advocacy, and overall well-being through community integration 
+training and the development of healthy habits. We strive to improve the quality of life 
+for the individuals we serve by focusing on areas such as safety, personal health and hygiene, 
+nutrition, physical fitness, and emergency preparedness. At Willing Workers, we believe in 
+the inherent worth and potential of every individual and are committed to helping those with 
+intellectual and developmental disabilities lead fulfilling and independent lives. We also 
+ensure that individuals at Willing Workers perform to their highest potential and 
+become full participants in their communities.
+</p>
+<figure>
+    <img
+      src={naturewalk}
+      alt="A group of people participating in an outdoor activity"
+    />
+  </figure>
+            <div className="about-container-text-values">
+              
+            <h1>Our Values</h1>
             <p>
-              In addition to offering a range of programs and activities
-              tailored to the unique needs and interests of each individual, we
-              also have our own private transportation service to ensure that
-              our clients can easily access our services. Whether it's through
-              our behavior program, arts and crafts, or outdoor activities like
-              nature walks and trips to the movies, we strive to provide
-              engaging and enriching experiences for our clients.
+            As employees of Willing Workers, we are committed to the 
+            following values in our interactions with the individuals we serve, 
+            their families, our staff, the community, and each other:
             </p>
 
-            <p>
-              If you or a loved one is in need of support, don't hesitate to
-              reach out to us. We would be happy to schedule a tour and discuss
-              how Willing Workers can best serve you.
-            </p>
-          </div>
+            <ul>
+  <li>Compassion: We care deeply about the thoughts and feelings of those around us.</li>
+  <li>Dignity: We treat all individuals with respect, honor, and fairness.</li>
+  <li>Diversity: We celebrate and embrace the differences that make us stronger.</li>
+  <li>Excellence: We strive to deliver the highest quality support and services at all times.</li>
+  <li>Honesty: We prioritize honesty and transparency in our communication in order to build trust.</li>
+</ul>
+            {/* </div> */}
+          
+   
+</div>
 
-          <figure>
+<div className="guiding_principles">
+           <h1>
+            Guiding Principles:
+            </h1> 
+            <p>
+
+Putting the individual first: At Willing Workers, we are guided by a person-centered approach, with the needs and well-being of the individuals we serve at the forefront of all we do.
+Empowerment: We believe in empowering individuals to take an active role in their own growth and development.
+Inclusivity: We strive to create an inclusive environment where all individuals feel valued and respected.
+Collaboration: We work closely with families, staff, and the community to provide the best possible support and services.
+Innovation: We are committed to continuously seeking out new and innovative ways to improve our services and support.
+Accountability: We take responsibility for our actions and decisions, and strive to be transparent in our communication and reporting.
+            </p>
+            <figure>
             <img
-              src={naturewalk}
+              src={helpingHands}
               alt="A group of people participating in an outdoor activity"
             />
           </figure>
+            </div>
+            
+          </div>
+
+         
         </div>
 
         <div className="about-container-contacts">
+
           <h5>Schedule a tour today</h5>
           <h3 style={{ color: "gray;" }}>
             Willing Workers is currently giving tours following CDC guidelines.

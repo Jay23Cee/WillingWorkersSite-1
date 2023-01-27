@@ -7,6 +7,8 @@ position:absolute
 
 }
 
+
+
 .about-container {
   display: flex;
   flex-direction: column;
@@ -52,17 +54,22 @@ position:absolute
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 80%;
-  margin: 0 auto;
+  width: 100%;
+ 
   text-align: center;
   margin-top:56px;
 
+  p{
+    text-align:start;
+
+  }
   .about-container-text-details {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    // flex-direction: column;
+   // align-items: center;
     margin-top:20px;
-
+    margin-bottom: 50px;
+    padding:0 50px;
     figure {
       display: flex;
       flex-direction: column;
@@ -81,6 +88,16 @@ position:absolute
         margin-top: 10px;
       }
     }
+  
+    .about-container-text-values{
+      margin: 20px 0;
+      text-align: left;
+      h1{
+        text-align: center;
+      }
+    }
+
+
   }
 
 
@@ -106,6 +123,11 @@ position:absolute
   .about-container-contacts {
       font-size: 14px;
   }
+
+  
+  
+
+
 }
 
 /* Styles for screens with a width smaller than 480px (i.e. smartphones) */
@@ -122,16 +144,17 @@ position:absolute
     .about-container-text-details {
       display: flex;
       flex-direction: column-reverse;
-      align-items: flex-start;
+    //  align-items: flex-start;
       justify-content: space-between;
+      padding: 0 50px;
 
-      figure {
-        width: 55%;
+    }
+    figure {
+      width: 55%;
 
-        img {
-          width: 100%;
-          height:100%;
-        }
+      img {
+        max-width: 60%;
+        height:100%;
       }
     }
   }
@@ -141,19 +164,20 @@ position:absolute
   .about-container-text {
     .about-container-text-details {
       display: flex;
-      flex-direction: row;
+      //flex-direction: row;
       align-items: flex-start;
       justify-content: space-between;
       background:rgba(220, 220, 220, 0.46);
       width:100%;
       .about-container-text-details-description{
         display: flex;
-        flex-direction: column;
+        flex-wrap: wrap;
+    //    flex-direction: column;
         justify-content: center;
         text-align: center;
         align-items: center;
         margin:40px;
-        width:70%;
+       // width:70%;
         padding-bottom:2vh;
       }
       figure {
