@@ -150,21 +150,23 @@ const Home = () => {
                 <div className="sop-statement .col-md-">
                   <p className="sop-statement-title">Willing Workers</p>
                   <p className="sop-statement-text">
-                    Statement <br></br>of Purpose
+                   Our <br></br>Mission
                   </p>
                 </div>
               </div>
               <div className="sop-quote .col-md-">
                 <p>
-                Willing Workers is a organization dedicated to assisting and supporting individuals with 
-                intellectual and developmental disabilities. 
-                Our mission is to promote independence, self-advocacy, and overall well-being through 
-                community integration training and the development of healthy habits. By focusing on areas 
-                such as safety, personal health and hygiene, nutrition, physical fitness, and emergency 
-                preparedness, we strive to improve the quality of life for the people we serve. At Willing 
-                Workers, we believe in the inherent worth and potential of every individual, and are committed 
-                to helping those with intellectual and developmental disabilities lead fulfilling and 
-                independent lives.
+                At Willing Workers, our mission is to assist and support 
+                individuals with intellectual and developmental disabilities 
+                by promoting independence, self-advocacy, and overall well-being 
+                through community integration training and the development of healthy 
+                habits. We strive to improve the quality of life for the individuals we 
+                serve by focusing on areas such as safety, personal health and hygiene, 
+                nutrition, physical fitness, and emergency preparedness. We believe in 
+                the inherent worth and potential of every individual and are committed 
+                to helping them lead fulfilling and independent lives. Our goal is to 
+                empower them to reach their full potential and become active members of 
+                their communities.
                 </p>
               </div>
             </div>
