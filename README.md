@@ -1,60 +1,49 @@
+# Willing Workers Website
 
-10/13/2022:
-We need to add a google maps api to the Contact section.
-add the contact information.
-needs to adjust the willing workers about page.
-Need to add the Program section.
+Welcome to the Willing Workers website, built using REACT with Typescript. This site is dedicated to assisting and supporting individuals with intellectual and developmental disabilities. Our mission is to promote independence, self-advocacy, and overall well-being through community integration training and the development of healthy habits.
 
+The website features a Google Maps integration to provide information about our organization and programs. You can also learn more about our mission and values, and how we strive to improve the quality of life for the individuals we serve by focusing on areas such as safety, personal health and hygiene, nutrition, physical fitness, and emergency preparedness.
 
-10/9/2022
-WOuld LIKE TO add some zoom animation to the donation section and image when hover.
-animatio to the program section.
+At Willing Workers, we believe in the inherent worth and potential of every individual and are committed to helping those with intellectual and developmental disabilities lead fulfilling and independent lives. We also ensure that individuals at Willing Workers perform to their highest potential and become full participants in their communities.
 
+## Installation 
 
+1. Clone the repository `git clone https://github.com/username/repo.git`
+2. Go to the project directory `cd repo`
+3. Install the dependencies `npm install`
+4. Start the development server `npm start`
 
-# Getting Started with Create React App
+## Screenshots
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Add screenshots of the website here
 
-## Available Scripts
+## Live Demo
 
-In the project directory, you can run:
+A link to a live demo of the website
 
-### `npm start`
+## Known Issues
+- List any known issues with the project
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Future plans
+- List any planned features or improvements
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Credits
 
-### `npm test`
+- Google Maps API
+- React
+- Typescript
+- Any other libraries or services used
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## License
 
-### `npm run build`
+This project is licensed under the [LICENSE_NAME] License.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Contributing
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Please read [CONTRIBUTING.md](https://github.com/username/repo/blob/master/CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Authors
 
-### `npm run eject`
+- **Your name** - *Initial work* - [username](https://github.com/username)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Thank you for visiting our website and learning more about Willing Workers. We hope you find the information on our site helpful and informative.
