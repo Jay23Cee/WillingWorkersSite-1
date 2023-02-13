@@ -9,8 +9,6 @@ import {
 import styled from "styled-components";
 import { Footer } from "./Footer";
 
-
-
 const containerStyle = {
   width: "100%",
   height: "100%",
@@ -22,16 +20,11 @@ const options = {
 };
 
 function Contact() {
-
   const apiKey = process.env.REACT_APP_GOOGLE_MAPS_API_KEY as string;
-
-
-
 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-
 
   const [selectedMarker, setSelectedMarker] = useState<{
     lat: number;

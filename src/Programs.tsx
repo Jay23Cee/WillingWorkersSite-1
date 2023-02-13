@@ -39,7 +39,7 @@ const Programs = () => {
     {
       name: "Recreational Activities and Leisure Skills Development Program",
       description:
-      "This program is designed to provide adults with a range of fun and engaging activities to enjoy in their free time, while also helping them develop important leisure skills. Options may include sports leagues, arts and crafts classes, and outdoor adventures, as well as special events and trips. Activities will be tailored to the individual needs and abilities of each participant.",
+        "This program is designed to provide adults with a range of fun and engaging activities to enjoy in their free time, while also helping them develop important leisure skills. Options may include sports leagues, arts and crafts classes, and outdoor adventures, as well as special events and trips. Activities will be tailored to the individual needs and abilities of each participant.",
       imageUrl: transportation,
     },
     {
@@ -49,9 +49,9 @@ const Programs = () => {
       imageUrl: lifeSkill,
     },
   ];
-useEffect(() => {
-  window.scrollTo(0, 0);
-}, []);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div>
       <div className="program-container">
@@ -64,28 +64,29 @@ useEffect(() => {
           <div className="program-description">
             <h1>Check out our Programs</h1>
             <p>
-            Willing Workers helps people with intellectual and developmental disabilities achieve 
-            independence, self-advocacy, and well-being through training and healthy habit development. 
-            We focus on safety, personal health and hygiene, nutrition, physical fitness, and 
-            emergency preparedness to improve quality of life. We believe in the worth and potential of 
-            every individual and are committed to helping them lead fulfilling, independent lives.
+              Willing Workers helps people with intellectual and developmental
+              disabilities achieve independence, self-advocacy, and well-being
+              through training and healthy habit development. We focus on
+              safety, personal health and hygiene, nutrition, physical fitness,
+              and emergency preparedness to improve quality of life. We believe
+              in the worth and potential of every individual and are committed
+              to helping them lead fulfilling, independent lives.
             </p>
-
           </div>
         </div>
 
         <ul className="program-list">
-  {programs.map((program) => (
-    <li key={program.name}>
-      <div className="program-card">
-        <img src={program.imageUrl} alt={program.name} />
-        <h3>{program.name}</h3>
-        <p>{program.description}</p>
-      </div>
-    </li>
-  ))}
-</ul>
-      <Footer/>
+          {programs.map((program) => (
+            <li key={program.name}>
+              <div className="program-card">
+                <img src={program.imageUrl} alt={program.name} />
+                <h3>{program.name}</h3>
+                <p>{program.description}</p>
+              </div>
+            </li>
+          ))}
+        </ul>
+        <Footer />
       </div>
     </div>
   );
